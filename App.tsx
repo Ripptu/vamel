@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Header } from './components/Header';
 import { ExperienceGrid } from './components/ExperienceGrid';
 import { About } from './components/About';
@@ -32,6 +32,11 @@ const BackgroundNebula = () => (
 
 function App() {
   const [isContactOpen, setIsContactOpen] = useState(false);
+
+  // Force scroll to top on initial load
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="min-h-screen text-white font-sans selection:bg-vamela-green selection:text-black relative overflow-x-hidden">

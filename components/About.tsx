@@ -7,10 +7,11 @@ import { motion } from 'framer-motion';
 export const About: React.FC = () => {
   return (
     <Section id="about" className="!py-0 !pb-0">
-      <Card className="p-5 bg-gradient-to-b from-[#121212] to-black border-white/5">
+      {/* Reduced bottom padding (pb-3) to remove empty space below text */}
+      <Card className="p-5 pb-4 bg-gradient-to-b from-[#121212] to-black border-white/5">
         
         {/* Dual Image Grid - Compact */}
-        <div className="grid grid-cols-2 gap-3 mb-5">
+        <div className="grid grid-cols-2 gap-3 mb-4">
             <motion.div 
               whileHover={{ scale: 1.02 }}
               className="relative w-full aspect-[4/5] rounded-2xl overflow-hidden border border-white/10"
@@ -33,8 +34,9 @@ export const About: React.FC = () => {
             </motion.div>
         </div>
         
-        <div className="mb-1">
-            <h3 className="text-xl font-black mb-3 tracking-tight text-white uppercase">
+        {/* Text container without extra bottom margin */}
+        <div className="mt-1">
+            <h3 className="text-xl font-black mb-2 tracking-tight text-white uppercase">
               Hi, ich bin Christian.
             </h3>
             <p className="text-gray-400 text-sm leading-relaxed font-medium">

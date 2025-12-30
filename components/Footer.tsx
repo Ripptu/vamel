@@ -12,8 +12,8 @@ export const Footer: React.FC<FooterProps> = ({ onOpenContact }) => {
             Warte nicht <br/>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">auf morgen.</span>
         </h2>
-        <p className="text-gray-400 mb-8 font-medium max-w-xs mx-auto">
-            Deine Idee ist bereit. Die Zeit läuft. Lass uns etwas starten, auf das wir beide stolz sind.
+        <p className="text-gray-400 mb-8 font-medium max-w-xs mx-auto text-sm">
+            Deine Idee ist bereit. Lass uns etwas starten, auf das wir beide stolz sind.
         </p>
         
         <button 

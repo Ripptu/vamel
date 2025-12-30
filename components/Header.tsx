@@ -24,7 +24,8 @@ export const Header: React.FC<HeaderProps> = ({ onOpenContact }) => {
              </div>
         </div>
         
-        <h1 className="text-4xl md:text-5xl font-medium tracking-tight mb-2 text-white">
+        {/* Updated Headline with Serif Font */}
+        <h1 className="text-4xl md:text-5xl font-serif italic tracking-tight mb-2 text-white/90">
           Deine eigene Website.
         </h1>
         <h2 className="text-5xl md:text-6xl font-black tracking-tighter text-white leading-tight">
