@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta name="theme-color" content="#000000" />
+    <title>VAMELA | Design & Web</title>
+    <meta name="description" content="12 Jahre Design-Expertise trifft modernes Webdesign." />
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              'vamela-bg': '#000000',
+              'vamela-card': '#0F0F0F',
+              'vamela-green': '#00DC82', // The vivid green from the screenshot
+              'vamela-green-dark': '#004d2e',
+              'vamela-gray': '#9CA3AF',
+            },
+            boxShadow: {
+              'glow-green': '0 0 40px -10px rgba(0, 220, 130, 0.3)',
+              'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.5)',
+            },
+            borderRadius: {
+              '4xl': '40px',
+              '3xl': '24px', // Slightly tighter radius as per screenshot
+              '2xl': '20px',
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        background-color: #000000;
+        color: #ffffff;
+        -webkit-tap-highlight-color: transparent;
+      }
+      /* Hide scrollbar for clean app feel but allow scrolling */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      
+      /* Green Nebula Background Animation */
+      @keyframes float {
+        0% { transform: translate(0px, 0px) scale(1); opacity: 0.4; }
+        33% { transform: translate(30px, -50px) scale(1.1); opacity: 0.6; }
+        66% { transform: translate(-20px, 20px) scale(0.9); opacity: 0.4; }
+        100% { transform: translate(0px, 0px) scale(1); opacity: 0.4; }
+      }
+      .animate-nebula {
+        animation: float 10s ease-in-out infinite;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "framer-motion": "https://esm.sh/framer-motion@^12.23.26"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
